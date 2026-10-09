@@ -1,7 +1,7 @@
 // Pixie Dust Paths: keeps the page working with a weak signal.
 // Network first, so a fresh deploy shows up as soon as the phone has signal; the saved copy is the fallback.
 const PREFIX = 'pp-preview-';
-const CACHE = PREFIX + '202610091636';
+const CACHE = PREFIX + '202610091648';
 const FONTS = CACHE + '-fonts';
 const SHELL = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png"];
 self.addEventListener('install', e => {
