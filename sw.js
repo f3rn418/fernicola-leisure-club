@@ -1,10 +1,10 @@
 // Pixie Dust Plan: keeps the page working with a weak signal.
 // Network first, checked against the server every time so a fresh deploy shows up right away.
 // If the network has not answered in 4 seconds, the saved copy opens instead and the fetch keeps going to refresh it.
-const PREFIX = 'pp-preview-';
+const PREFIX = 'pp-root-';
 const CACHE = PREFIX + '202610092153';
 const FONTS = CACHE + '-fonts';
-const SHELL = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png"];
+const SHELL = ["Disney-Park-Day-Paths.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png"];
 const WAIT = 4000;
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL.map(u => new Request(u, {cache: 'reload'})))).then(() => self.skipWaiting()));

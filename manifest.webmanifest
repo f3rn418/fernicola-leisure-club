@@ -2,7 +2,7 @@
  "name": "Pixie Dust Plan",
  "short_name": "Pixie Plan",
  "description": "Fernicola Leisure Club, Disney 2026",
- "start_url": "./",
+ "start_url": "./Disney-Park-Day-Paths.html",
  "scope": "./",
  "display": "standalone",
  "orientation": "portrait",
